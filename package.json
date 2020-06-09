@@ -5,12 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile:ts": "browserify --debug src/index.ts -p [ tsify --project src/tsconfig.json ] -o public/js/app.js",
-    "compile:pcss": "postcss src/index.pcss -o public/css/app.css",
-    "watch:pcss": "postcss src/index.pcss --watch -o public/css/app.css",
-    "build:pcss": "postcss src/index.pcss --env production -o public/css/app.css",
     "build:ts": "browserify src/index.ts -p [ tsify --project src/tsconfig.json ] | uglifyjs -cm -o public/js/app.js",
     "clean:ts": "rm -f public/js/app.js",
-    "clean:pcss": "rm -f public/css/app.css",
     "compile": "run-s compile:*",
     "build": "run-s build:*",
     "clean": "run-s clean:*",
