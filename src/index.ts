@@ -1,11 +1,9 @@
 // App entry point
 import m from 'mithril';
-import Home from './components/Home';
-import About from './components/About';
+
 
 m.route(document.body, '/', {
-  '/': Home,
-  '/about': About
+  '/': //TODO ADD ROOT PAGE,
 });
 
 ///////////////////////////////////////////////////////////

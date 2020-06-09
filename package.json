@@ -18,7 +18,7 @@
     "start": "run-p watch:* serve"
   },
   "keywords": [],
-  "author": "spacejack",
+  "author": "furqan",
   "license": "MIT",
   "dependencies": {
     "mithril": "^2.0.4"
